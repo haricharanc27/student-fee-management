@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Choose an option</title>
+</head>
+<style>
+
+h1{
+  text-align: center;
+  font-size: xx-large;
+  text-decoration: underline;
+  text-shadow: 0cqmax;
+  font-style: oblique;
+}
+p{
+  font-size: xx-large;
+  font-style: italic;
+  color: blue;
+}
+select{
+  font-size: x-large;
+  color:crimson;
+  border-radius: 15%;
+}
+a{
+  font-size: x-large;
+}
+
+</style>
+<body>
+  <div class = "cat"
+  
+  <h1>AMRITA PEETHAM</h1>
+</div>
+  <p>Welcome to Amrita Viswavidypeetham student fee portal.Here you can check your students current fee status.</p>
+  <h2>PLEASE SELECT ONE OF THE OPTION BELOW:</h2>
+  <select id="mySelect">
+    <option value = "id1.html">ID no:1</option>
+    <option value="id2.html">ID no:2</option>
+    <option value = "id3.html">ID no:3</option>
+    <option value = "id4.html">ID no:4</option>
+    <option value = "id5.html">ID no:5</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <a href="javascript:void(0)" onclick="redirect()">SELECT</a>
+
+  <script>
+    function redirect() {
+      const selectedOption = document.getElementById("mySelect").value;
+      window.location.href = selectedOption;
+    }
+  </script>
+</body>
+</html>
