@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Choose an option</title>
+</head>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  background-image: url('https://webfiles.amrita.edu/2020/12/sTwUegXx-amrita_univerty.jpg');
+}
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+  text-decoration: underline;
+  text-shadow: 2px 2px #ccc;
+  font-style: oblique;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+p {
+  font-size: 24px;
+  font-style: italic;
+  color: blue;
+  margin-bottom: 50px;
+}
+
+select {
+  font-size: 24px;
+  color: crimson;
+  border-radius: 15%;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+a {
+  font-size: 24px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: crimson;
+  color: white;
+  text-decoration: none;
+  border-radius: 15%;
+  margin-bottom: 50px;
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: darkred;
+}
+
+a:active {
+  background-color: maroon;
+}
+
+
+select{
+  font-size: x-large;
+  color:crimson;
+  border-radius: 15%;
+}
+.container {
+  border-radius: 100%;
+  border-color: brown;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+</style>
+<body>
+  <div class="container">
+  <h1>AMRITA PEETHAM</h1>
+  <p>Welcome to Amrita Viswavidypeetham student fee portal.Here you can check your students current fee status.</p>
+  <h2>PLEASE SELECT ONE OF THE OPTION BELOW:</h2>
+  <select id="mySelect">
+    <option value = "id1.html">YEAR-1</option>
+    <option value="id2.html">YEAR-2</option>
+    <option value = "id3.html">YEAR-3</option>
+    <option value = "id4.html">YEAR-4</option>
+    <option value = "id5.html">YEAR-5</option>
+  </select>
+  <br>
+  <br>
+  <br>
+  <a href="javascript:void(0)" onclick="redirect()">SELECT</a>
+  </div>
+
+  <script>
+    function redirect() {
+      const selectedOption = document.getElementById("mySelect").value;
+      window.location.href = selectedOption;
+    }
+  </script>
+</body>
+</html>

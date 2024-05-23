@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+      body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image:url('https://assets.nst.com.my/images/articles/photo6118633856564307928.jpg_1520226072.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+      
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeIn 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: #737b4e;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2c3679;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>About Us</h1>
+        <p id="aboutText">We are a team of passionate developers and innovators, dedicated to creating cutting-edge AI solutions.</p>
+        <button id="loadMore" onclick="show()">show more</button>
+        <button id="loadMore" onclick="noshow()">show less</button>
+        <div id="about" style="display: none;">
+        <ol>
+        <li style="font-style:italic;"> <b>SCIENCE LOCATION:</b><br> Nestled along the picturesque backwaters and the Arabian Sea in Kerala, offering a serene and inspiring environment for learning.
+        </li>
+        <li style="font-style:italic;">
+            <b>STATE-OF-THE-ART INFRASTRUCTURE:</b><br> Modern facilities including advanced laboratories, well-equipped classrooms, and comprehensive libraries to support a robust academic experience.
+        </li>
+        <li style="font-style:italic;">
+           <b> INNOVATIVE PROGRAMS:</b><br> Wide range of undergraduate, postgraduate, and doctoral programs in engineering, sciences, humanities, and social sciences.
+
+        </li>
+        <li style="font-style:italic;"><b>RESARCH EXCELLENCE:</b><br> Renowned for cutting-edge research with numerous projects funded by national and international agencies.
+        </li>
+        <li style="font-style:italic;">
+           <b> GLOBAL COLLOBIRATIONS:</b><br> Partnerships with over 200 leading universities worldwide for student exchange, research, and joint programs.</li>
+        <li style="font-style:italic;">
+           <b> COMMUNITY CONNECTIONS:</b><br> Strong emphasis on community service and humanitarian projects, reflecting the university's mission to serve society.
+         </li>
+        </ol>
+    </div>
+    </div>
+    <script> function show(){
+        document.getElementById('about').style.display="block";
+    }
+    function noshow(){
+        document.getElementById('about').style.display="none";
+    }</script>
+</body>
+</html>
